@@ -1,0 +1,139 @@
+ 
+ 
+.bgImage{
+    display: block;
+    width: 60%;
+    height: 300;
+    border: 2px #2771fb;
+    border-radius: 2px;
+     margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+}
+
+.subheader{
+    /* color: #0e43c9; */
+     margin-left: 20%;
+    font-family: "Unna", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    font-size: medium;
+
+}
+.admission-description{
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    line-height: 1.5;
+    font-family: "Domine", serif;
+   font-optical-sizing: auto;
+   font-weight:500;
+   font-style: normal;
+   font-size: 14px;
+}
+ 
+
+.admission-sub-header{
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    line-height: 1.5;
+    font-size: 14px;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    /* color: #0e43c9; */
+    font-size: medium;
+    font-family: "Unna", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+ 
+.ad-space-div{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+     /* font-family: "Unna", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;  */
+     font-family: "Domine", serif;
+    font-optical-sizing: auto;
+  font-weight:500;
+  font-style: normal;
+  font-size: 14px;
+}
+  
+
+/* Updated UI*/
+.admission-body{
+    height: 80%;
+    
+}
+
+
+/* Fonts */
+.domine {
+  font-family: "Domine", serif;
+  font-optical-sizing: auto;
+  font-weight:300;
+  font-style: normal;
+}
+ 
+.redressed-regular {
+  font-family: "Redressed", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+header,nav{
+    display: flex;
+    background-color: #0e43c9;
+    padding: 2px;
+ }
+
+
+ @media (max-width:786px){
+    .bgImage{
+    display: block;
+    width: 100%;
+    height: 150;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+ }
+
+ .subheader{
+    /* color: #0e43c9; */
+     margin-left: 3%;
+    font-family: "Unna", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+
+}
+
+.admission-description{
+     margin-left: 3%;
+     margin-right: 3%;
+    width: 100%;
+    line-height: 1.4; 
+    padding: 0; 
+    font-family: "Domine", serif;
+    font-optical-sizing: auto;
+  font-weight:500;
+  font-style: normal;
+  font-size: 13px;
+}
+
+     }

@@ -1,0 +1,193 @@
+<html lang="en"> 
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="index.css"> 
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+    <title>PVB</title>
+     
+</head>
+<body>
+  <div class="parent-div">
+    <!-- Left -->
+  <div class="left-child">
+    <img class="logo" src="./src/logo.png">    
+  </div>
+
+  <!-- Mid -->
+
+   <div class="mid-child">
+    <div class="sub-child-left">
+     <!-- <div class="sub-child">
+     </div> -->
+      <div class="sub-child">
+         
+         <div class="parent_location">
+          <!-- Matric -->
+         <div class="address-left">  
+          <h4 class="school-name-left">PRASANTHI VIDYA BHAVAN</h4>
+         <h4 class="school-grade-left">MATRICULATION HIGHER SECONDARY SCHOOL</h4>
+         <h5 class="school-address-left">CHINNIAMPALAYAM,MODAKURICHI (TK),ERODE-638104</h5>
+         </div>
+        
+        <!-- Nursery -->
+         <div class="address-right"> 
+          <h4 class="school-name-right">PRASANTHI VIDYA BHAVAN</h4>
+          <h4 class="school-grade-right">NURSERY AND PRIMARY SCHOOL</h4>
+          <h5 class="school-address-right">66,AVVAIYAR STREET,TEACHER'S COLONY, ERODE-638011</h5>
+
+           <img  class="badge_1" src="./src/badge.png"  > 
+         </div>
+         </div>
+  </div>
+     </div>
+  </div>
+
+<!--  Right -->
+ <div class="right-child">
+    
+    <div>
+    <img class="badge" src="./src/badge.png"  > 
+  </div>
+  </div>
+  <!--  --> 
+  </div>
+  
+      <nav class="nav-links">
+           <button class="nav-toggle"><i class="fas fa-home"></i> </button>
+         <ul>
+          
+           <li class="nav-item"><a href="#" onclick="loadPage('aboutus')">ABOUT US</a></li>
+           <li class="nav-item"><a href="#" onclick="loadPage('campus')">CAMPUS</a> </li>
+           
+           <li class="nav-item"> <a href="#" onclick="loadPage('academics')">ACADEMICS</a></li>
+           <li class="nav-item"> <a href="#" onclick="loadPage('events')">EVENTS</a></li>
+           <li class="nav-item"> <a href="#" onclick="loadPage('transport')">TRANSPORT</a></li>
+           <li class="nav-item"> <a href="#" onclick="loadPage('gallery')">GALLERY</a></li>
+           <li class="nav-item"> <a href="#" onclick="loadPage('admission')">ADMISSION</a></li>
+         </ul>
+        </nav>
+        <!-- <div class="marquee">
+  <div class="marquee-text">Admissions are open until Vijayadashami!</div>
+</div> -->
+     <!-- <img class="logo" src="./src/slogo.jpg"  >  -->
+    </div>
+<div id="content"></div>
+<!-- </div> -->
+
+
+
+<footer class="footer1">
+ <div>
+ <h3 class="ind_h4">PRASANTHI VIDYA BHAVAN</h3>
+ <h5 class="ind_h4">MODAKURICHI</h5>
+ <div>
+  <div class="index-space-div">MATRICULATION HIGHER SECONDARY SCHOOL</div>
+  <div class="index-space-div">CHINNIAMPALAYAM,MODAKURICHI (TK),ERODE-638104</div>
+  <div class="index-space-div">Mail: pvbschools@gmail.com</div>
+  <div class="index-space-div">Phone: 0424-2125154/0424-2125154</div>
+  <div class="index-space-div">Mobile: 9876543210</div>
+  <!-- <div class="space-div">Whatsapp: 9876543210</div> -->
+  </div>
+ </div>
+ <div id="imageModal" class="modal" onclick="closeModal()">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImage">
+</div>
+ <div class="footer-div-2">
+    <h3 class="ind_h4">PRASANTHI VIDYA BHAVAN </h3>
+    <h5 class="ind_h4">ERODE</h5>
+    <div>
+    <div class="index-space-div">NURSERY AND PRIMARY SCHOOL</div>
+    <div class="index-space-div">66, AVVAIYAR STREET,TEACHER'S COLONY, ERODE-638011</div>
+    <div class="index-space-div">Mail: pvbschools@gmail.com </div>
+    <div class="index-space-div">Phone: 0424-2125154/0424-2125154</div>
+    <div class="index-space-div">Mobile: 9876543210</div>
+</div>
+ </div>
+  <p class="copy-rights"> &copy; 2025 ABCD. All rights reserved. </p>
+
+  
+</footer>
+
+
+<script>
+
+    // const window = window.location.pathname
+    // const links = document.querySelectorAll("nav a")
+
+    // links.forEach(link=>{
+    //     if(link.getAttribute("href")=="current"){
+    //         link.classList.add("selected")
+    //     }
+    // })
+const navToggle = document.querySelector('.nav-toggle');
+const navLinks = document.querySelector('.nav-links ul');
+const icon = navToggle.querySelector('i')
+navToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+   if (navLinks.classList.contains('active')) {
+    icon.classList.remove('fa-home');
+    icon.classList.add('fa-times');
+  } else {
+    icon.classList.remove('fa-times');
+    icon.classList.add('fa-home');
+  }
+});
+    function loadPage(page){
+        fetch(`${page}.html`).then(response =>response.text())
+        .then(html=>{
+            document.getElementById('content').innerHTML = html
+        })
+        .catch(err=>{
+            document.getElementById("content").innerHTML ="<p> Error loading page. </p>"
+        })
+
+    }
+
+        window.onload = function () {
+        loadPage('aboutus');
+    };
+
+
+function showImage(src) {
+    console.log("Onclick called");
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImage");
+    modal.style.display = "flex";
+    modalImg.src = src;
+  }
+
+  function closeModal() {
+    document.getElementById("imageModal").style.display = "none";
+  }
+</script>
+
+
+</body>
+</html>

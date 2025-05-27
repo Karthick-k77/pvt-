@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="gallery.css"> 
+
+  <title>Image Gallery Menu</title>
+  
+</head>
+<body>
+
+  <div class="gallery-container">
+   
+    <div class="gallery-grid">
+      <div class="ver">
+        <img src="./src/annualday.jpg" alt="Image 2" onclick="showImage(this.src)">
+        <p class="cen">ANNUAL DAY</p>
+      </div>
+      <div class="ver">
+        <img src="./src/sportsday.jpg" alt="Image 3" onclick="showImage(this.src)">
+        <p class="cen">SPORTS DAY</p>
+      </div>
+      <div class="ver">
+        <img src="./src/inter_house_events.jpg" alt="Image 4" onclick="showImage(this.src)">
+        <p class="cen">HOUSE EVENTS</p>
+      </div>
+      <div class="ver">
+        <img src="./src/exhibition.jpg" alt="Image 5" onclick="showImage(this.src)">
+        <p class="cen">EXHIBITION</p>
+      </div>
+    </div>
+  
+ </div>
+<script>
+ 
+  function showImage(src) {
+    console.log("Onclick called: " + src);
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImage");
+    modal.style.display = "flex";
+    modalImg.src = src;
+  }
+
+  function closeModal() {
+    document.getElementById("imageModal").style.display = "none";
+  }
+</script>
+
+
+</body>
+</html>
