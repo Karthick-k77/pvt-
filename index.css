@@ -776,5 +776,8 @@ nav{
     padding: 20px;
     display: block;
  }
-  
+   body{
+  width: 100%;
+  overflow-x: hidden;
+ }
 }
