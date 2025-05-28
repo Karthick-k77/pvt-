@@ -172,5 +172,12 @@ header,nav{
   font-style: normal;
   font-size: 13px;
 }
-
+body{
+    margin: 0;
+    overflow-x:hidden;
+}
+html{
+    overflow-x:hidden
+}
+ 
      }
