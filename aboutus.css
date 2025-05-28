@@ -1,20 +1,13 @@
 
 body{
     margin: 0;
-    overflow-x:hidden;
-}
-html{
-    overflow-x:hidden
-}
- 
+ }
 
 header,nav{
     display: flex;
     background-color: #0e43c9;
     padding: 2px;
  }
-
- 
 
 .bgImage{
     display: block;
@@ -171,15 +164,5 @@ header,nav{
   font-weight:500;
   font-style: normal;
   font-size: 13px;
-}
-body{
-    margin: 0;
-    overflow-x:hidden;
-     width: 100%;
-}
-html{
-    overflow-x:hidden;
-     width: 100%;
-}
- 
+} 
      }
