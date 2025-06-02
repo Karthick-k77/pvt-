@@ -1,5 +1,7 @@
  
- 
+ body{
+    margin: 0;
+}
 header,nav{
     display: flex;
     background-color: #0e43c9;
@@ -88,8 +90,9 @@ li::marker {
     /* color: #0e43c9; */
      margin-left: 3%;
     font-family: "Unna", serif;
-    font-weight: 700;
+    font-weight: 900;
     font-style: normal;
+    font-size: 17px;
     font-variation-settings:
     "wdth" 100;
 
@@ -103,9 +106,9 @@ li::marker {
     padding: 0; 
     font-family: "Domine", serif;
     font-optical-sizing: auto;
-  font-weight:500;
+  font-weight:400;
   font-style: normal;
-  font-size: 13px;
+  font-size: 15px;
   padding: 3%;
 }
      
@@ -119,9 +122,9 @@ li::marker {
     padding-bottom: 20px; */
     font-family: "Domine", serif;
     font-optical-sizing: auto;
-   font-weight:500;
+   font-weight:400;
    font-style: normal;
-   font-size: 14px;
+   font-size: 15px;
    margin-left: 3%;
    margin-right: 3%;
    
