@@ -1,13 +1,16 @@
 
 body{
     margin: 0;
- }
+}
+ 
 
 header,nav{
     display: flex;
     background-color: #0e43c9;
     padding: 2px;
  }
+
+ 
 
 .bgImage{
     display: block;
@@ -136,17 +139,17 @@ header,nav{
     .bgImage{
     display: block;
     width: 100%;
-    height: 150;
+    height: 200px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1%;
+    margin: 0;
  }
 
  .subheader{
     /* color: #0e43c9; */
      margin-left: 3%;
     font-family: "Unna", serif;
-    font-weight: 700;
+    font-weight: 900;
     font-style: normal;
     font-variation-settings:
     "wdth" 100;
@@ -163,6 +166,7 @@ header,nav{
     font-optical-sizing: auto;
   font-weight:500;
   font-style: normal;
-  font-size: 13px;
-} 
+  font-size: 15px;
+}
+
      }

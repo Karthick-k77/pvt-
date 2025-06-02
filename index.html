@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="index.css"> 
-    
+    <meta name="theme-color" content="#DAF7A6">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
@@ -43,13 +44,13 @@
 
    <div class="mid-child">
     <div class="sub-child-left">
-     <!-- <div class="sub-child">
-     </div> -->
       <div class="sub-child">
          
          <div class="parent_location">
           <!-- Matric -->
+           
          <div class="address-left">  
+          <img  class="badge_3" src="./src/logo.png"> 
           <h4 class="school-name-left">PRASANTHI VIDYA BHAVAN</h4>
          <h4 class="school-grade-left">MATRICULATION HIGHER SECONDARY SCHOOL</h4>
          <h5 class="school-address-left">CHINNIAMPALAYAM,MODAKURICHI (TK),ERODE-638104</h5>
@@ -61,11 +62,13 @@
           <h4 class="school-grade-right">NURSERY AND PRIMARY SCHOOL</h4>
           <h5 class="school-address-right">66,AVVAIYAR STREET,TEACHER'S COLONY, ERODE-638011</h5>
 
-           <img  class="badge_1" src="./src/badge.png"  > 
+           <!-- <img  class="badge_1" src="./src/badge.png"  >  -->
          </div>
          </div>
   </div>
      </div>
+
+     <!-- For Mobile -->
   </div>
 
 <!--  Right -->
@@ -101,11 +104,11 @@
 <!-- </div> -->
 
 
-
+<img class="badge_2" src="./src/badge.png"  >
 <footer class="footer1">
- <div>
+   <div>
  <h3 class="ind_h4">PRASANTHI VIDYA BHAVAN</h3>
- <h5 class="ind_h4">MODAKURICHI</h5>
+ <h5 class="ind_h5">MODAKURICHI</h5>
  <div>
   <div class="index-space-div">MATRICULATION HIGHER SECONDARY SCHOOL</div>
   <div class="index-space-div">CHINNIAMPALAYAM,MODAKURICHI (TK),ERODE-638104</div>
@@ -121,7 +124,7 @@
 </div>
  <div class="footer-div-2">
     <h3 class="ind_h4">PRASANTHI VIDYA BHAVAN </h3>
-    <h5 class="ind_h4">ERODE</h5>
+    <h5 class="ind_h5">ERODE</h5>
     <div>
     <div class="index-space-div">NURSERY AND PRIMARY SCHOOL</div>
     <div class="index-space-div">66, AVVAIYAR STREET,TEACHER'S COLONY, ERODE-638011</div>
@@ -152,6 +155,7 @@ const icon = navToggle.querySelector('i')
 navToggle.addEventListener('click', () => {
   navLinks.classList.toggle('active');
    if (navLinks.classList.contains('active')) {
+     
     icon.classList.remove('fa-home');
     icon.classList.add('fa-times');
   } else {

@@ -138,6 +138,13 @@ nav{
  
 }
 
+.ind_h5{
+    color: #FFC300;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+ 
+}
+
 .address{
     padding: 5px;
     
@@ -248,12 +255,14 @@ nav{
   .left-child {
   width: 100px; /* or however wide your logo/badge should be */
   flex-shrink: 0;
+  display: block;
 }
 
 .right-child {
   width: 100px; /* or however wide your logo/badge should be */
   flex-shrink: 0;
   margin-right: 70px;
+  display: block;
 }
      
      /* .mid-child{
@@ -267,7 +276,7 @@ nav{
 }
 
     .sub-child{
-        flex: 1;       
+        flex: 2;       
      }
      .sub-child-left{
         gap: 10px;
@@ -611,36 +620,55 @@ nav{
     padding: 20px;
  }
 
+  .badge_2{ 
+    display: none;
+    align-items: end;
+    width: 90px;
+    height: 90px;
+    padding: 20px;
+    transform: translateY(50%);
+ }
+ .badge_3{ 
+    align-self: center;
+    /* align-content: center; */
+    margin-left: 60px;
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    display: none;
+ }
+
 /* Re Mobile*/
 @media (max-width: 768px) {
   /* Navigation  */
   .nav-links{
-    background-color: #e5ecfc;
+    background-color: #0e43c9;
     color: whitesmoke;
   
   }
+
+  
   .nav-links ul {
     flex-direction: column; /* vertical stack */
     display: none; /* hide menu initially */
     /* gap: 5px; */
-    background-color: #e5ecfc;
+    /* background-color: gray; */
     /* padding: 5px; */
   }
 
   .nav-links ul.active {
     display: flex; /* show menu when active */
-    background-color: #800000;
-    color: #FFC300;
-  }
+    background-color: #0e43c9;
+   }
 
   .nav-toggle {
     color: transparent;
     display: block; /* show hamburger */
   }
-
+   
   .nav-toggle i {
     font-size: 20px;   /* Smaller icon */
-    color: #333;
+    color: darkgrey;
     padding: 10px;       /* Dark gray */
   }
 
@@ -649,13 +677,14 @@ nav{
   }
  .nav-links a {
   text-decoration: none;
-  color: black; 
-  background-color: #e5ecfc;
+  color: darkgrey; 
+  /* //0e43c9 */
+  background-color: #0e43c9;
   margin: 0;
   padding: 10px;
   font-family: "Domine", serif;
   font-optical-sizing: auto;
-  font-weight:500;
+  font-weight:800;
   font-style: normal;
   font-size: 14px;
 }
@@ -667,7 +696,6 @@ nav{
 
 /* Footer */
 .footer1{
-     
     background-color: #343434;
     padding: 20px;
     display: flex;
@@ -713,14 +741,13 @@ nav{
     font-weight: 600;
     font-style: normal;
     font-size: 14px;
+    width: 100%;
     padding-top: 5px;
     padding-left: 10px;
     padding-right: 10px;
-    margin: 0;
-    margin-left: 60px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+     margin-left: auto;
+    margin-right: auto;
+    align-items: center;
  }
 
 
@@ -729,15 +756,13 @@ nav{
   font-weight: 600;
   font-style: normal;
   word-spacing: normal;
- 
+   width: 100%;
     padding-top: 4px;
     padding-left: 10px;
     padding-right: 10px;
-    margin: 0;
-    margin-left: 60px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
     margin-top: 4%;
     color: #800000;
  }
@@ -756,7 +781,7 @@ nav{
     margin-left: 60px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
  }
 
   .badge{ 
@@ -771,13 +796,106 @@ nav{
     align-self: center;
     /* align-content: center; */
     margin-left: 60px;
-    width: 90px;
-    height: 90px;
+    width: 100px;
+    height: 100px;
     padding: 20px;
     display: block;
  }
-   body{
+
+ 
+   .badge_3{ 
+    align-self: center;
+    /* align-content: center; */
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 100px;
+
+    display: block;
+ }
+
+ body{
   width: 100%;
   overflow-x: hidden;
+ }
+
+  .badge_2{ 
+    display: block;
+    align-items: end;
+    width: 90px;
+    height: 90px;
+     
+    transform: translateY(50%);
+ }
+.ind_h4{
+    color: #FFC300;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    margin-top: 20px;
+ 
+}
+
+ .left-child {
+  width: 100px; /* or however wide your logo/badge should be */
+  flex-shrink: 0;
+  display: none;
+}
+
+.right-child {
+  width: 100px; /* or however wide your logo/badge should be */
+  flex-shrink: 0;
+  margin-right: 70px;
+  display: none;
+}
+  
+ .school-grade-left{ 
+
+  font-family: "Vollkorn", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+    font-size: 15px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0;
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .school-address-left
+ {
+    font-family: "Vollkorn", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0;
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .school-name-left{
+   font-family: "DM Serif Text", serif;
+  font-weight: 600;
+  font-style: normal;
+  word-spacing: normal; 
+    padding-top: 4px;
+    margin: 0;
+    width: 100%;
+     /* display: flex; */
+    /* flex-direction: column; */
+    align-items: center;
+   
+    margin-top: 4%;
+    color: #800000;
  }
 }
