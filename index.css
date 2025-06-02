@@ -680,6 +680,9 @@ nav{
 .nav-toggle.active i {
   color: #FFC300;
 }
+   .nav-toggle :active {
+    color: #FFC300;     /** Bright blue on hover **/
+  }
  .nav-links a {
   text-decoration: none;
   color: darkgrey; 
