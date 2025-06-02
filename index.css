@@ -666,9 +666,8 @@ nav{
 
 .nav-toggle i {
   font-size: 20px;
-  color: darkgrey;
-  padding: 10px;
-  transition: color 0.3s ease;
+  color: #FFC300;
+  padding: 10px; 
 }
 
 /* Color on hover */
