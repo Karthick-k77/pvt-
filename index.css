@@ -649,17 +649,18 @@ nav{
     flex-direction: column; /* vertical stack */
     display: none; /* hide menu initially */
     /* gap: 5px; */
-    /* background-color: gray; */
+    /* background-color: #FFC300; */
     /* padding: 5px; */
   }
 
   .nav-links ul.active {
     display: flex; /* show menu when active */
     background-color: #0e43c9;
+    color: #FFC300;
    }
 
   .nav-toggle {
-    color: transparent;
+    color: #FFC300;
     display: block; /* show hamburger */
   }
    
