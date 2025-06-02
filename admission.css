@@ -135,5 +135,8 @@ header,nav{
   font-style: normal;
   font-size: 15px;
 }
-
+body{
+  width: 100%;
+  overflow-x: hidden;
+ }
      }
