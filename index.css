@@ -598,6 +598,7 @@ nav{
   color: whitesmoke;
   /* padding: 5px; */
   text-align: center;
+  
 }
 
 .copy-rights{
@@ -656,32 +657,26 @@ nav{
   .nav-links ul.active {
     display: flex; /* show menu when active */
     background-color: #0e43c9;
-    /* color: #FFC300; */
+    color: #FFC300;
+    
    }
 
-.nav-toggle {
-  display: block;
-  cursor: pointer;
-}
+  .nav-toggle {
+    color: transparent;
+    display: block; /* show hamburger */
+  }
+   
+  .nav-toggle i {
+    font-size: 20px;   /* Smaller icon */
+    color: #FFC300;
+    padding: 10px;       /* Dark gray */
+    /* transition: color 0.3s ease; */
+  }
 
-.nav-toggle i {
-  font-size: 20px;
-  color: #FFC300;
-  padding: 10px; 
-}
-
-/* Color on hover */
-.nav-toggle:hover i {
-  color: #FFC300;
-}
-
-/* Color when active (menu open) */
-.nav-toggle.active i {
-  color: #FFC300;
-}
-/*    .nav-toggle :active {
-    color: #FFC300;     /** Bright blue on hover **/
-  } */
+  /* .nav-toggle:hover i {
+    color: #FFC300;   /* Bright blue on hover */
+  /* } */ */
+ 
  .nav-links a {
   text-decoration: none;
   color: darkgrey; 
@@ -900,8 +895,7 @@ nav{
     color: #800000;
  }
 
-  
-
+ 
 
 
 }
