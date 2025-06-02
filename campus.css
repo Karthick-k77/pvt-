@@ -1,8 +1,6 @@
  
  body{
     margin: 0;
-/*     width: 100%;
-  overflow-x: hidden; */
 }
 header,nav{
     display: flex;
@@ -20,7 +18,14 @@ header,nav{
     margin-right: auto;
     margin-top: 2%;
 }
-
+ @keyframes scroll-left {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
 .subheader{
     /* color: #0e43c9; */
     font-family: "Unna", serif;
@@ -132,10 +137,6 @@ li::marker {
    
  
 }
-       body{
-    margin: 0;
-    width: 100%;
-  overflow-x: hidden;
-}
+
 
 }
