@@ -85,7 +85,10 @@ body{
   display: block;
   text-decoration: none;
 }
- 
+
+.login:hover{
+     color: #FFC300;
+}
 
 nav{ 
     color: #f5f5f5;
@@ -222,32 +225,12 @@ nav{
      /* div for header */
      .parent-div{
        background-color: #ffe9a0;
-       /* background-color: grey; */
-       display: flex;
-       flex-direction: row;
-       /* justify-content: space-between; */
-       height: 20%;
-       
-     }
-
-     /* .left-child{
-        flex: 1;
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin: 30px;
-        width: 10%;
-     }
-     
-     .right-child{
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      margin: 30px;
-      width: 10%;
+       flex-direction: row;
+        height: 20%;
       
-      } */
+     }
+   
 
   .left-child {
   width: 100px; /* or however wide your logo/badge should be */
@@ -262,12 +245,8 @@ nav{
   display: block;
 }
      
-     /* .mid-child{
-      flex: 2;
-      width: 80%;
-     } */
-
-     .mid-child {
+    
+ .mid-child {
   flex: 1;  /* this makes it occupy the remaining space */
   padding: 0 10px; /* optional spacing */
 }
@@ -598,7 +577,6 @@ nav{
   color: whitesmoke;
   /* padding: 5px; */
   text-align: center;
-  
 }
 
 .copy-rights{
@@ -650,33 +628,29 @@ nav{
     flex-direction: column; /* vertical stack */
     display: none; /* hide menu initially */
     /* gap: 5px; */
-    /* background-color: #FFC300; */
+    /* background-color: gray; */
     /* padding: 5px; */
   }
 
   .nav-links ul.active {
     display: flex; /* show menu when active */
     background-color: #0e43c9;
-    color: #FFC300;
-    
    }
 
   .nav-toggle {
-    color:  #FFC300;
+    color: transparent;
     display: block; /* show hamburger */
   }
    
   .nav-toggle i {
     font-size: 20px;   /* Smaller icon */
-    color: #FFC300;
+    color: darkgrey;
     padding: 10px;       /* Dark gray */
-    /* transition: color 0.3s ease; */
   }
 
-  /* .nav-toggle:hover i {
-    color: #FFC300;   /* Bright blue on hover */
-  /* } */ */
- 
+  .nav-toggle:hover i {
+    color: #FFC300;    /* Bright blue on hover */
+  }
  .nav-links a {
   text-decoration: none;
   color: darkgrey; 
@@ -691,10 +665,10 @@ nav{
   font-size: 14px;
 }
 
-/* .nav-links a:hover{
+.nav-links a:hover{
  
   color: #FFC300;
-} */
+}
 
 /* Footer */
 .footer1{
@@ -895,7 +869,8 @@ nav{
     color: #800000;
  }
 
- 
+  
+
 
 
 }
