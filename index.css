@@ -656,11 +656,11 @@ nav{
   .nav-links ul.active {
     display: flex; /* show menu when active */
     background-color: #0e43c9;
-    color: #FFC300;
+    /* color: #FFC300; */
    }
 
   .nav-toggle {
-    color: #FFC300;
+    /* color: #FFC300; */
     display: block; /* show hamburger */
   }
    
