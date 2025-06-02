@@ -659,21 +659,27 @@ nav{
     /* color: #FFC300; */
    }
 
-  .nav-toggle {
-    /* color: #FFC300; */
-    display: block; /* show hamburger */
-  }
-   
-  .nav-toggle i {
-    font-size: 20px;   /* Smaller icon */
-    color: darkgrey;
-    padding: 10px;       /* Dark gray */
-    transition: color 0.3s ease;
-  }
+.nav-toggle {
+  display: block;
+  cursor: pointer;
+}
 
-  .nav-toggle:hover i {
-    color: #FFC300;    /* Bright blue on hover */
-  }
+.nav-toggle i {
+  font-size: 20px;
+  color: darkgrey;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+/* Color on hover */
+.nav-toggle:hover i {
+  color: #FFC300;
+}
+
+/* Color when active (menu open) */
+.nav-toggle.active i {
+  color: #FFC300;
+}
  .nav-links a {
   text-decoration: none;
   color: darkgrey; 
