@@ -155,6 +155,7 @@ const icon = navToggle.querySelector('i');
 
 navToggle.addEventListener('click', () => {
   navLinks.classList.toggle('active');
+  navToggle.classList.toggle('active'); // 🔧 This line makes the color change persist
 
   if (navLinks.classList.contains('active')) {
     icon.classList.remove('fa-home');
@@ -162,7 +163,7 @@ navToggle.addEventListener('click', () => {
   } else {
     icon.classList.remove('fa-times');
     icon.classList.add('fa-home');
-    navToggle.blur(); // Reset hover/focus
+    navToggle.blur(); // optional: removes focus outline
   }
 });
     function loadPage(page){
