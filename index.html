@@ -151,16 +151,18 @@
     // })
 const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelector('.nav-links ul');
-const icon = navToggle.querySelector('i')
+const icon = navToggle.querySelector('i');
+
 navToggle.addEventListener('click', () => {
   navLinks.classList.toggle('active');
-   if (navLinks.classList.contains('active')) {
-     
+
+  if (navLinks.classList.contains('active')) {
     icon.classList.remove('fa-home');
     icon.classList.add('fa-times');
   } else {
     icon.classList.remove('fa-times');
     icon.classList.add('fa-home');
+    navToggle.blur(); // Reset hover/focus
   }
 });
     function loadPage(page){
