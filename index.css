@@ -171,7 +171,23 @@ nav{
     font-size: 14px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+.index-space-div-address{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: darkgrey;
+    font-size: 14px;
+    display: block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
+.index-space-div-address-mob{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: darkgrey;
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: none;
+}
 .logo{
 
     position: absolute;
@@ -650,7 +666,7 @@ nav{
     padding: 20px;
     transform: translateY(50%);
  }
-.badge_3{ 
+ .badge_3{ 
     align-self: center;
     /* align-content: center; */
     margin-left: 60px;
@@ -700,9 +716,9 @@ nav{
   }
  .nav-links a {
   text-decoration: none;
-  color: darkgrey; 
+  color: whitesmoke; 
   /* //0e43c9 */
-  background-color: #0e43c9;
+  /* background-color: #0e43c9; */
   margin: 0;
   padding: 10px;
   font-family: "Domine", serif;
@@ -972,6 +988,22 @@ nav{
 
   
 
+.index-space-div-address{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: darkgrey;
+    display: none;
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
+.index-space-div-address-mob{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: darkgrey;
+    font-size: 14px;
+    display: block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
 }

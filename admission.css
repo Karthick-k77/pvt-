@@ -38,25 +38,30 @@
 .admission-sub-header{
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
+    padding: 10px;
+    width: 30%;
     line-height: 1.5;
     font-size: 14px;
-    padding: 0;
-    margin-top: 0;
+     /* padding: 0; */
+    margin-top: 2rem;
     margin-bottom: 0;
-    /* color: #0e43c9; */
-    font-size: medium;
+    color:#800;
+    font-size: 17px;
     font-family: "Unna", serif;
-    font-weight: 700;
+    font-weight: 900;
     font-style: normal;
     font-variation-settings:
     "wdth" 100;
+     border: 1px solid black;
+     text-align: center;
+    
 }
  
 .ad-space-div{
-    margin-top: 10px;
-    margin-bottom: 5px;
-    width: 60%;
+    /* margin-top: 10px;
+    margin-bottom: 5px; */
+    padding: 10px;
+    width: 30%;
     margin-left: auto;
     margin-right: auto;
      /* font-family: "Unna", serif;
@@ -69,12 +74,14 @@
   font-weight:500;
   font-style: normal;
   font-size: 14px;
+   border: 1px solid black;
+   text-align: center;
 }
   
 
 /* Updated UI*/
 .admission-body{
-    height: 80%;
+    height: 60%;
     
 }
 
@@ -113,8 +120,7 @@ header,nav{
  }
 
  .subheader{
-    /* color: #0e43c9; */
-     margin-left: 3%;
+    margin-left: 3%;
     font-family: "Unna", serif;
     font-weight: 900;
     font-style: normal;
@@ -126,17 +132,60 @@ header,nav{
 .admission-description{
      margin-left: 3%;
      margin-right: 3%;
-    width: 100%;
+     width: auto;
     line-height: 1.4; 
     padding: 0; 
     font-family: "Domine", serif;
     font-optical-sizing: auto;
+    font-weight:500;
+    font-style: normal;
+    font-size: 15px;
+    
+}
+
+
+.admission-sub-header{
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    line-height: 1.5;
+    font-size: 15px;
+    padding: 10px;
+     margin-top: 2rem;
+    margin-bottom: 0;
+    color:#800;
+    font-size: 16px;
+    font-family: "Unna", serif;
+    font-weight: 900;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    border: 1px solid black;
+}
+
+/* Updated UI*/
+.admission-body{
+    height: 55%;
+    
+}
+.ad-space-div{
+    /* margin-top: 10px;
+    margin-bottom: 5px; */
+    padding: 10px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+     /* font-family: "Unna", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;  */
+     font-family: "Domine", serif;
+    font-optical-sizing: auto;
   font-weight:500;
   font-style: normal;
-  font-size: 15px;
+  font-size: 14px;
+   border: 1px solid black;
+   text-align: center;
 }
-body{
-  width: 100%;
-  overflow-x: hidden;
- }
      }
