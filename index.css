@@ -650,10 +650,11 @@ nav{
     padding: 20px;
     transform: translateY(50%);
  }
- .badge_3{ 
+.badge_3{ 
     align-self: center;
     /* align-content: center; */
     margin-left: 60px;
+    margin-top: 10px;
     width: 100px;
     height: 100px;
     padding: 20px;
