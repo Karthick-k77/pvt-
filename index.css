@@ -132,7 +132,7 @@ nav{
 }
 .school-address-right-mob-1
  { 
-    display: block;
+    display: none;
     font-family: "Vollkorn", serif;
     font-optical-sizing: auto;
     font-weight: 600;
@@ -660,8 +660,325 @@ nav{
     display: none;
  }
 
-/* Re Mobile*/
+/* Re Mobile  TAB*/
 @media (max-width: 768px) {
+  /* Navigation  */
+  .nav-links{
+    background-color: #0e43c9;
+    color: whitesmoke;
+    
+  }
+
+  
+  .nav-links ul {
+    flex-direction: column; /* vertical stack */
+    display: none; /* hide menu initially */
+    /* gap: 5px; */
+    /* background-color: gray; */
+    /* padding: 5px; */
+  }
+
+  .nav-links ul.active {
+    display: flex; /* show menu when active */
+    background-color: #0e43c9;
+   }
+
+  .nav-toggle {
+    color: transparent;
+    display: block; /* show hamburger */
+  }
+   
+  .nav-toggle i {
+    font-size: 20px;   /* Smaller icon */
+    color: #FFC300;
+    padding: 10px;       /* Dark gray */
+  }
+
+  .nav-toggle:hover i {
+    color: #FFC300;    /* Bright blue on hover */
+  }
+ .nav-links a {
+  text-decoration: none;
+  color: darkgrey; 
+  /* //0e43c9 */
+  background-color: #0e43c9;
+  margin: 0;
+  padding: 10px;
+  font-family: "Domine", serif;
+  font-optical-sizing: auto;
+  font-weight:800;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.nav-links a:hover{
+ 
+  color: #FFC300;
+}
+
+/* Footer */
+.footer1{
+    background-color: #343434;
+    padding: 20px;
+    display: flex;
+    color:#FF5733 ;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.copy-rights{
+  margin-top: 10px;
+  color: darkgray;
+  align-self: end;
+}
+
+.footer-div-2{
+  margin-top: 10px;
+}
+
+
+/* Header */
+ .parent-div{
+       background-color: #ffe9a0;
+       /* background-color: grey; */
+       display: flex;
+       flex-direction: col;
+       /* justify-content: space-between; */
+       height: auto;
+       
+     }
+
+    .parent_location{
+    display: flex;   
+    flex-direction: column;
+ }
+
+ .school-address-right
+ { 
+    display: none; 
+    font-family: "Vollkorn", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    width: 100%;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+ }
+
+ .school-address-right-mob
+ { 
+    display: flex;
+    font-family: "Vollkorn", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    width: 100%;
+    padding-top: 5px;
+     padding-left: 10px;
+    padding-right: 10px; 
+    align-items: center; 
+   flex-direction: column;
+   margin: 0;
+ }
+
+ .school-address-right-mob-1
+ { 
+    display: flex;
+    font-family: "Vollkorn", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    width: 100%;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-direction: column;
+    margin: 0;
+    margin-bottom: 20px;
+    
+ }
+
+
+ .school-name-right{
+  font-family: "DM Serif Text", serif;
+  font-weight: 600;
+  font-style: normal;
+  word-spacing: normal;
+   width: 100%;
+    padding-top: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    margin-top: 4%;
+    color: #800000;
+ }
+
+  .school-grade-right{ 
+
+    font-family: "Vollkorn", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal; 
+    font-size: 15px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+  .badge{ 
+    display: none;
+    margin-left: 60px;
+    width: 90px;
+    height: 90px;
+    padding: 20px;
+ }
+
+   .badge_1{ 
+    align-self: center;
+    /* align-content: center; */
+    margin-left: 60px;
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    display: block;
+ }
+
+ 
+   .badge_3{ 
+    align-self: center;
+    /* align-content: center; */
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 100px;
+
+    display: block;
+ }
+
+ body{
+  width: 100%;
+  overflow-x: hidden;
+ }
+
+  .badge_2{ 
+    margin-top: -8%;
+    display: block;
+    /* align-items: end; */
+    width: 90px;
+    height: 90px;
+
+    /* transform: translateY(-50%); */
+ }
+.ind_h4{
+    color: #FFC300;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    margin-top: 20px;
+ 
+}
+
+ .left-child {
+  width: 100px; /* or however wide your logo/badge should be */
+  flex-shrink: 0;
+  display: none;
+}
+
+.right-child {
+  width: 100px; /* or however wide your logo/badge should be */
+  flex-shrink: 0;
+  margin-right: 70px;
+  display: none;
+}
+  
+ .school-grade-left{ 
+
+  font-family: "Vollkorn", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+    font-size: 15px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .school-address-left
+ {
+    font-family: "Vollkorn", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0;
+     display: none;
+    flex-direction: column;
+    align-items: center;
+ }
+ .school-address-left-mob
+ {
+    font-family: "Vollkorn", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0;
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+
+ .school-name-left{
+   font-family: "DM Serif Text", serif;
+  font-weight: 600;
+  font-style: normal;
+  word-spacing: normal; 
+    padding-top: 4px;
+    margin: 0;
+    width: 100%; 
+    align-items: center;
+    margin-top: 4%;
+    color: #800000;
+ }
+
+  
+
+
+
+}
+
+
+
+
+/* Re Mobile*/
+@media (max-width: 480px) {
   /* Navigation  */
   .nav-links{
     background-color: #0e43c9;
