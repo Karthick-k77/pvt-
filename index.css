@@ -661,7 +661,7 @@ nav{
  }
 
 /* Re Mobile  TAB*/
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   /* Navigation  */
   .nav-links{
     background-color: #0e43c9;
