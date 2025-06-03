@@ -50,7 +50,7 @@
           <img  class="badge_3" src="./src/logo.png"> 
           <h4 class="school-name-left">PRASANTHI VIDYA BHAVAN</h4>
          <h4 class="school-grade-left">MATRICULATION HIGHER SECONDARY SCHOOL</h4>
-         <h5 class="school-address-left">CHINNIAMPALAYAM,MODAKURICHI (TK),ERODE-638104</h5>
+         <h5 class="school-address-left">CHINNIAMPALAYAM, MODAKURICHI (TK), ERODE-638104</h5>
          <h5 class="school-address-left-mob">CHINNIAMPALAYAM, MODAKURICHI (TK)</h5>
         <h5 class="school-address-left-mob">ERODE-638104</h5>
 
@@ -60,8 +60,8 @@
          <div class="address-right"> 
           <h4 class="school-name-right">PRASANTHI VIDYA BHAVAN</h4>
           <h4 class="school-grade-right">NURSERY AND PRIMARY SCHOOL</h4>
-          <h5 class="school-address-right">66,AVVAIYAR STREET,TEACHER'S COLONY, ERODE-638011</h5>
-          <h5 class="school-address-right-mob">66, AVVAIYAR STREET,TEACHER'S COLONY</h5>
+          <h5 class="school-address-right">66, AVVAIYAR STREET, TEACHER'S COLONY, ERODE-638011</h5>
+          <h5 class="school-address-right-mob">66, AVVAIYAR STREET, TEACHER'S COLONY</h5>
           <h5 class="school-address-right-mob-1">ERODE-638011</h5>
           
 
@@ -114,7 +114,7 @@
  <div>
   <div class="index-space-div">MATRICULATION HIGHER SECONDARY SCHOOL</div>
   <div class="index-space-div-address">CHINNIAMPALAYAM, MODAKURICHI (TK), ERODE-638104</div>
-  <div class="index-space-div-address-mob">CHINNIAMPALAYAM, MODAKURICHI (TK), </div>
+  <div class="index-space-div-address-mob">CHINNIAMPALAYAM, MODAKURICHI (TK) </div>
   <div class="index-space-div-address-mob">ERODE-638104</div>
   <div class="index-space-div">Mail: pvbschools@gmail.com</div>
   <div class="index-space-div">Phone: 0424-2125154/0424-2125154</div>
@@ -122,17 +122,34 @@
   <!-- <div class="space-div">Whatsapp: 9876543210</div> -->
   </div>
  </div>
- <div id="imageModal" class="modal" onclick="closeModal()">
+ <!-- <div id="imageModal" class="modal" onclick="closeModal()">
   <span class="close">&times;</span>
   <img class="modal-content" id="modalImage">
-</div>
+</div> -->
+<!-- IMG -->
+
+ <!-- Modal -->
+    <div id="imageModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+
+      <div class="modal-content">
+        <img id="modalImage" class="modal-image" src="" alt="Modal Image">
+
+        <div class="dots" id="dotsContainer"></div>
+
+        <button class="prev" onclick="showPrevImage()">&#10094;</button>
+        <button class="next" onclick="showNextImage()">&#10095;</button>
+      </div>
+    </div>
+  </div>
+ <!-- ..... -->
  <div class="footer-div-2">
     <h3 class="ind_h4">PRASANTHI VIDYA BHAVAN </h3>
     <h5 class="ind_h5">ERODE</h5>
     <div>
     <div class="index-space-div">NURSERY AND PRIMARY SCHOOL</div>
     <div class="index-space-div-address">66, AVVAIYAR STREET, TEACHER'S COLONY, ERODE-638011</div>
-    <div class="index-space-div-address-mob">66, AVVAIYAR STREET, TEACHER'S COLONY, </div>
+    <div class="index-space-div-address-mob">66, AVVAIYAR STREET, TEACHER'S COLONY </div>
     <div class="index-space-div-address-mob">ERODE-638011</div>
     <div class="index-space-div">Mail: pvbschools@gmail.com </div>
     <div class="index-space-div">Phone: 0424-2125154/0424-2125154</div>
@@ -188,17 +205,113 @@ navToggle.addEventListener('click', () => {
     };
 
 
-function showImage(src) {
-    console.log("Onclick called");
+// function showImage(src) {
+//     console.log("Onclick called");
+//     const modal = document.getElementById("imageModal");
+//     const modalImg = document.getElementById("modalImage");
+//     modal.style.display = "flex";
+//     modalImg.src = src;
+//   }
+
+//   function closeModal() {
+//     document.getElementById("imageModal").style.display = "none";
+//   }
+
+
+let currentIndex = 0;
+    let images;
     const modal = document.getElementById("imageModal");
     const modalImg = document.getElementById("modalImage");
-    modal.style.display = "flex";
-    modalImg.src = src;
-  }
+    const dotsContainer = document.getElementById("dotsContainer");
 
-  function closeModal() {
-    document.getElementById("imageModal").style.display = "none";
-  }
+ function showImage(src, index,name) {
+      modal.style.display = "flex";
+      
+      currentIndex = index;
+
+      if (index === 0) {
+        let currentIndex = 0;
+        modalImg.src = "./src/exhibition.jpg";
+        images = [
+          "./src/exhibition.jpg",
+          "./src/exhibition.jpg",
+          "./src/exhibition.jpg",
+          "./src/exhibition.jpg"
+        ];
+      } else if (index === 1) {
+         currentIndex = 0;
+          modalImg.src = "./src/annualday.jpg";
+        images = [
+          "./src/annualday.jpg",
+          "./src/annualday.jpg",
+          "./src/annualday.jpg",
+          "./src/annualday.jpg"
+        ];
+      } else if (index === 2) {
+         currentIndex = 0;
+          modalImg.src = "./src/sportsday.jpg";
+        images = [
+          "./src/sportsday.jpg",
+          "./src/sportsday.jpg",
+          "./src/sportsday.jpg",
+          "./src/sportsday.jpg"
+        ];
+      } else if (index === 3) {
+         currentIndex = 0;
+         modalImg.src = "./src/sportsday.jpg";
+        images = [
+          "./src/karate.jpg",
+          "./src/karate.jpg",
+          "./src/karate.jpg",
+          "./src/karate.jpg"
+        ];
+      }
+
+      updateDots();
+    }
+
+    function closeModal() {
+      modal.style.display = "none";
+    }
+
+    function showNextImage() {
+      currentIndex = (currentIndex + 1) % images.length;
+      modalImg.src = images[currentIndex];
+      updateDots();
+    }
+
+    function showPrevImage() {
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      modalImg.src = images[currentIndex];
+      updateDots();
+    }
+
+    function updateDots() {
+      dotsContainer.innerHTML = "";
+
+      images.forEach((img, index) => {
+        const dot = document.createElement("span");
+        dot.classList.add("dot");
+        if (index === currentIndex) dot.classList.add("active");
+
+        dot.onclick = () => {
+          currentIndex = index;
+          modalImg.src = images[currentIndex];
+          updateDots();
+        };
+
+        dotsContainer.appendChild(dot);
+      });
+    }
+
+    window.onclick = function(event) {
+      if (event.target === modal) {
+        closeModal();
+      }
+    }
+
+
+
 </script>
 
 
