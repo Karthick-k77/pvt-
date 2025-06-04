@@ -22,6 +22,17 @@ header,nav{
 .subheader{
     /* color: #0e43c9; */
     font-family: "Unna", serif;
+    font-weight: 900;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    font-size: medium;
+    margin-left: 20%;
+
+} 
+.subheader-1{
+    color: #800000;
+    font-family: "Unna", serif;
     font-weight: 700;
     font-style: normal;
     font-variation-settings:
@@ -72,7 +83,7 @@ header,nav{
 }
 
 li::marker { 
-    color: #800000;   
+    color: grey;   
 } 
  
 
