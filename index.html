@@ -30,7 +30,7 @@
     <title>PVB</title>
      
 </head>
-<body>
+<body oncontextmenu="return false;">
   <div class="parent-div">
     <!-- Left -->
   <div class="left-child">
@@ -164,6 +164,7 @@
 
 
 <script>
+  document.addEventListener('contextmenu', event => event.preventDefault());
 
     // const window = window.location.pathname
     // const links = document.querySelectorAll("nav a")
