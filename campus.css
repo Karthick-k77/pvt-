@@ -17,7 +17,17 @@ header,nav{
      margin-left: auto;
     margin-right: auto;
     margin-top: 2%;
+   -webkit-user-drag: none;
+      user-drag: none;
 }
+.bgImage::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: transparent;
+      z-index: 10;
+    }
 
 .subheader{
     /* color: #0e43c9; */
@@ -95,7 +105,17 @@ li::marker {
     margin-left: auto;
     margin-right: auto;
     margin: 0;
- }
+    -webkit-user-drag: none;
+      user-drag: none;
+}
+.bgImage::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: transparent;
+      z-index: 10;
+    }
 
  .subheader{
     /* color: #0e43c9; */
