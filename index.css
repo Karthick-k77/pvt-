@@ -42,9 +42,19 @@ ul{
 
 }
  
-#content{
+/* #content{
         flex: 1;
-     }
+     } */
+#content {
+  flex: 1;
+  transition: opacity 0.3s ease;
+  opacity: 1;
+}
+
+#content.fade-out {
+  opacity: 0;
+}
+
 li a{
     display: block;
     color: whitesmoke;
