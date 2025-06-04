@@ -72,10 +72,8 @@ li a.active{
     font-weight: bold;
 }
 
-html, body {
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
+body{
+    margin: 0; 
 }
  
 
@@ -260,6 +258,7 @@ nav{
         display: flex;
        flex-direction: row;
         height: 20%;
+        
       
      }
    
@@ -284,6 +283,7 @@ nav{
   width: 100px; /* or however wide your logo/badge should be */
   flex-shrink: 0;
   display: block;
+  margin-top: 10px;
 }
 
 .right-child {
@@ -291,12 +291,14 @@ nav{
   flex-shrink: 0;
   margin-right: 70px;
   display: block;
+  margin-top: 10px;
 }
      
     
  .mid-child {
   flex: 1;  /* this makes it occupy the remaining space */
   padding: 0 10px; /* optional spacing */
+  margin-top: 10px;
 }
 
     .sub-child{
@@ -312,13 +314,33 @@ nav{
     width: 90px;
     height: 80px;
     padding: 20px;
- }
+    -webkit-user-drag: none;
+      user-drag: none;
+}
+.logo::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: transparent;
+      z-index: 10;
+    }
  .badge{ 
     align-items: end;
     width: 90px;
     height: 90px;
     padding: 20px;
- }
+   -webkit-user-drag: none;
+      user-drag: none;
+}
+.badge::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: transparent;
+      z-index: 10;
+    }
 
  .school-name{
    display: flex;
@@ -658,7 +680,17 @@ nav{
     width: 90px;
     height: 90px;
     padding: 20px;
- }
+   -webkit-user-drag: none;
+      user-drag: none;
+}
+.badge_1::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: transparent;
+      z-index: 10;
+    }
 
   .badge_2{ 
     display: none;
@@ -667,7 +699,17 @@ nav{
     height: 90px;
     padding: 20px;
     transform: translateY(50%);
- }
+   -webkit-user-drag: none;
+      user-drag: none;
+}
+.badge_2::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: transparent;
+      z-index: 10;
+    }
  .badge_3{ 
     align-self: center;
     /* align-content: center; */
@@ -677,7 +719,17 @@ nav{
     height: 100px;
     padding: 20px;
     display: none;
- }
+   -webkit-user-drag: none;
+      user-drag: none;
+}
+.badge_3::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: transparent;
+      z-index: 10;
+    }
 
  /* IMG */
 .gallery-container {
@@ -703,6 +755,16 @@ nav{
       cursor: pointer;
       border-radius: 8px;
       transition: transform 0.2s ease;
+      -webkit-user-drag: none;
+      user-drag: none;
+}
+.thumbnail::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: transparent;
+      z-index: 10;
     }
 
     .thumbnail:hover {
@@ -746,6 +808,16 @@ nav{
       object-fit: contain;
       background-color: #00ffff;
       border-radius: 8px;
+       -webkit-user-drag: none;
+      user-drag: none;
+}
+.modal-image::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: transparent;
+      z-index: 10;
     }
 
     .close {
@@ -900,6 +972,7 @@ nav{
        /* justify-content: space-between; */
        height: auto;
        
+       
      }
 
     .parent_location{
@@ -999,7 +1072,17 @@ nav{
     width: 90px;
     height: 90px;
     padding: 20px;
- }
+   -webkit-user-drag: none;
+      user-drag: none;
+}
+.badge::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: transparent;
+      z-index: 10;
+    }
 
    .badge_1{ 
     align-self: center;
@@ -1009,7 +1092,17 @@ nav{
     height: 100px;
     padding: 20px;
     display: block;
- }
+   -webkit-user-drag: none;
+      user-drag: none;
+}
+.badge_1::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: transparent;
+      z-index: 10;
+    }
 
  
    .badge_3{ 
@@ -1022,7 +1115,17 @@ nav{
     height: 100px;
 
     display: block;
- }
+    -webkit-user-drag: none;
+      user-drag: none;
+}
+.badge_3::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: transparent;
+      z-index: 10;
+    }
 
  body{
   width: 100%;
@@ -1038,7 +1141,17 @@ nav{
     height: 90px;
 
     /* transform: translateY(-50%); */
- }
+    -webkit-user-drag: none;
+      user-drag: none;
+}
+.badge_2::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: transparent;
+      z-index: 10;
+    }
 .ind_h4{
     color: #FFC300;
     font-family: Arial, Helvetica, sans-serif;
