@@ -72,8 +72,10 @@ li a.active{
     font-weight: bold;
 }
 
-body{
-    margin: 0; 
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
  
 
