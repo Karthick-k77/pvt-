@@ -31,7 +31,7 @@ header,nav{
 
 } 
 .subheader-1{
-    color: #800000;
+    color: #363636;
     font-family: "Unna", serif;
     font-weight: 700;
     font-style: normal;
@@ -83,7 +83,7 @@ header,nav{
 }
 
 li::marker { 
-    color: grey;   
+    color: gray;   
 } 
  
 
@@ -108,6 +108,22 @@ li::marker {
     "wdth" 100;
 
 }
+
+.subheader-1{
+    color: #363636;
+    font-family: "Unna", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    font-size: medium;
+      margin-left: 3%;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+
+} 
 
 .description1{
      margin-left: 3%;
