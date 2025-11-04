@@ -2,7 +2,9 @@
 body{
     margin: 0; 
 }
- 
+ img{
+    pointer-events: none;
+ }
 .logo{ 
     position: absolute;
     z-index: 1000;
@@ -158,3 +160,4 @@ header,nav{
       z-index: 10;
     }
      }
+
