@@ -1,4 +1,6 @@
- 
+img{
+    pointer-events: none;
+} 
 
 header,nav{
     display: flex;
@@ -99,3 +101,4 @@ header,nav{
 
      }
  
+
