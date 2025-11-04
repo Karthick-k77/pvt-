@@ -2,6 +2,10 @@
  body{
     margin: 0;
 }
+img{
+    pointer-events: none;
+}
+
 header,nav{
     display: flex;
     background-color: #0e43c9;
@@ -178,3 +182,4 @@ li::marker {
 }
 
 }
+
