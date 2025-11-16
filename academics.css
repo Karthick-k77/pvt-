@@ -93,7 +93,7 @@ header,nav{
     /* column-count: 1; */
     list-style-type: disc;
     padding-left: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
     font-family: "Domine", serif;
     font-optical-sizing: auto;
    font-weight:500;
@@ -200,4 +200,5 @@ li::marker {
 
      }
  
+
 
