@@ -29,6 +29,11 @@ header,nav{
       z-index: 10;
     }
 
+    .highlight{
+    font-weight: bold;
+    color: #800000;
+}
+
 .subheader{
     /* color: #0e43c9; */
     margin-left: 20%;
@@ -44,8 +49,7 @@ header,nav{
     margin-left: auto;
     margin-right: auto;
     width: 60%;
-    line-height: 1.5;
-    column-count: 2;
+    line-height: 1.5; 
     column-gap: 30px;
      font-family: "Domine", serif;
     font-optical-sizing: auto;
@@ -55,7 +59,56 @@ header,nav{
     
 }
    
+.academics-description-updated{
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    line-height: 1.5; 
+    column-gap: 30px;
+     font-family: "Domine", serif;
+    font-optical-sizing: auto;
+  font-weight:500;
+  font-style: normal;
+  font-size: 16px; 
+    
+}
+.academics-description-gedu{
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    line-height: 1.5; 
+    column-gap: 10px;
+     font-family: "Domine", serif;
+    font-optical-sizing: auto;
+  font-weight:500;
+  font-style: normal;
+  font-size: 14px; 
+    
+}
 
+.ul{ 
+    margin-left: auto;
+    margin-right: auto;  
+    width: 60%;
+    /* column-count: 1; */
+    list-style-type: disc;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    font-family: "Domine", serif;
+    font-optical-sizing: auto;
+   font-weight:500;
+   font-style: normal;
+   font-size: 14px;
+   
+ 
+}
+.ul li{
+    margin-bottom: 10px;
+}
+
+li::marker { 
+    color: gray;   
+} 
  @media (max-width:786px){
     .bgImage{
      display: block;
@@ -97,6 +150,52 @@ header,nav{
   font-weight:500;
   font-style: normal;
   font-size: 15px;
+}
+
+
+.academics-description-updated{
+     margin-left: 3%;
+     margin-right: 3%;
+    width: auto;
+    line-height: 1.4; 
+    padding: 0; 
+    font-family: "Domine", serif;
+    font-optical-sizing: auto;
+  font-weight:500;
+  font-style: normal;
+  font-size: 15px;
+}
+
+
+.academics-description-gedu{
+     margin-left: 3%;
+     margin-right: 3%;
+    width: auto;
+    line-height: 1.4; 
+    padding: 0; 
+    font-family: "Domine", serif;
+    font-optical-sizing: auto;
+  font-weight:500;
+  font-style: normal;
+  font-size: 14px;
+}
+
+
+
+.ul{  
+    width: auto;
+    column-count: 1;
+    list-style-type: disc;
+    /* padding-left: 20px;
+    padding-bottom: 20px; */
+    font-family: "Domine", serif;
+    font-optical-sizing: auto;
+   font-weight:500;
+   font-style: normal;
+   font-size: 15px;
+   margin-left: 3%;
+   margin-right: 3%;
+   
 }
 
      }
