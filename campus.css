@@ -80,7 +80,7 @@ header,nav{
     margin-left: auto;
     margin-right: auto;  
     width: 60%;
-    column-count: 1;
+    /* column-count: 1; */
     list-style-type: disc;
     padding-left: 20px;
     padding-bottom: 20px;
@@ -182,4 +182,5 @@ li::marker {
 }
 
 }
+
 
