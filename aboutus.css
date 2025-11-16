@@ -52,17 +52,7 @@ header,nav{
 
 }
 
-.subheaderhistory{
-     /* color: #0e43c9; */
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 900;
-    font-style: initial;
-    font-variation-settings:
-    "wdth" 100;
-    font-size: 18px;
 
-}
 .description{
     margin-left: auto;
     margin-right: auto;
@@ -191,19 +181,7 @@ header,nav{
     "wdth" 100;
 
 }
-
-.subheaderhistory{
-     /* color: #0e43c9; */
-     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 700;
-    font-style: normal;
-    font-variation-settings:
-    "wdth" 100;
-    font-size: 18px;
-    
-
-}
+ 
 
 .description_sub{
      margin-left: 3%;
