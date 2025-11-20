@@ -19,7 +19,7 @@ header,nav{
     width: 60%;
     height: 300;
     border: 2px #2771fb;
-    object-fit:cover;
+    object-fit:contain;
     border-radius: 2px;
     margin-left: auto;
     margin-right: auto;
@@ -198,5 +198,6 @@ header,nav{
 }
 
      }
+
 
 
