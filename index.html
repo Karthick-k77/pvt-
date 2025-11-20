@@ -31,6 +31,11 @@
      
 </head>
 <body oncontextmenu="return false;">
+  <div>
+    <div class="parent-row">
+    <h4 class="school-title-name">PRASANTHI VIDYA BHAVAN</h4>
+    </div>
+  
   <div class="parent-div">
     <!-- Left -->
   <div class="left-child">
@@ -48,7 +53,7 @@
            
          <div class="address-left">  
           <img  class="badge_3" src="./src/logo.png"> 
-          <h4 class="school-name-left">PRASANTHI VIDYA BHAVAN</h4>
+          <h4 class="school-name-left">MAIN CAMPUS</h4>
          <h4 class="school-grade-left">MATRICULATION HIGHER SECONDARY SCHOOL</h4>
          <h5 class="school-address-left">CHINNIAMPALAYAM, MODAKURICHI (TK), ERODE-638104</h5>
          <h5 class="school-address-left-mob">CHINNIAMPALAYAM, MODAKURICHI (TK)</h5>
@@ -58,7 +63,7 @@
         
         <!-- Nursery -->
          <div class="address-right"> 
-          <h4 class="school-name-right">PRASANTHI VIDYA BHAVAN</h4>
+          <h4 class="school-name-right">CITY CAMPUS</h4>
           <h4 class="school-grade-right">NURSERY AND PRIMARY SCHOOL</h4>
           <h5 class="school-address-right">66, AVVAIYAR STREET, TEACHER'S COLONY, ERODE-638011</h5>
           <h5 class="school-address-right-mob">66, AVVAIYAR STREET, TEACHER'S COLONY</h5>
@@ -83,6 +88,7 @@
   </div>
   <!--  --> 
   </div>
+  </div>
   
       <nav class="nav-links">
            <button class="nav-toggle"><i class="fas fa-home"></i> </button>
@@ -98,9 +104,9 @@
            <li class="nav-item"> <a href="#" onclick="loadPage('admission')">ADMISSION</a></li>
          </ul>
         </nav>
-        <!-- <div class="marquee">
+        <div class="marquee">
   <div class="marquee-text">Admissions are open until Vijayadashami!</div>
-</div> -->
+</div>
      <!-- <img class="logo" src="./src/slogo.jpg"  >  -->
     </div>
 <div id="content"></div>
@@ -124,7 +130,7 @@
 <footer class="footer1">
    <div>
  <h3 class="ind_h4">PRASANTHI VIDYA BHAVAN</h3>
- <h5 class="ind_h5">MODAKURICHI</h5>
+ <h4 class="ind_h5">MAIN CAMPUS</h5>
  <div>
   <div class="index-space-div">MATRICULATION HIGHER SECONDARY SCHOOL</div>
   <div class="index-space-div-address">CHINNIAMPALAYAM, MODAKURICHI (TK), ERODE-638104</div>
@@ -146,7 +152,7 @@
   
  <div class="footer-div-2">
     <h3 class="ind_h4">PRASANTHI VIDYA BHAVAN </h3>
-    <h5 class="ind_h5">ERODE</h5>
+    <h4 class="ind_h5">CITY CAMPUS</h5>
     <div>
     <div class="index-space-div">NURSERY AND PRIMARY SCHOOL</div>
     <div class="index-space-div-address">66, AVVAIYAR STREET, TEACHER'S COLONY, ERODE-638011</div>
@@ -215,8 +221,32 @@ navToggle.addEventListener('click', () => {
                 content.classList.remove('fade-out');
             })
             .catch(err => {
-                content.innerHTML = "<p>Error loading page.</p>";
+                // content.innerHTML = '<p class="error-text">Error loading page.</p>'; 
+                // content.classList.remove('fade-out');
+                // console.error("Page load error:", err);
+
+                content.innerHTML = '';
+
+                // Make container a flexbox for centering
+                content.style.display = 'flex';
+                content.style.justifyContent = 'center';
+                content.style.alignItems = 'center';
+                content.style.textAlign = 'center';
+                content.style.height = '50vh'; // adjust as needed
+                content.style.boxSizing = 'border-box'
+
+                 const errorMessage = document.createElement('p');
+                errorMessage.textContent = 'Loading...';
+                errorMessage.style.fontFamily = 'Times New Roman, serif';
+                 errorMessage.style.fontWeight = 'bold';
+                errorMessage.style.color = '#666561';
+
+                // Append to container
+                errorMessage.style.fontSize = 'clamp(15px, 5vw, 18px)';
+                content.appendChild(errorMessage);
+
                 content.classList.remove('fade-out');
+
                 console.error("Page load error:", err);
             });
     }, 300); // Match this to your CSS transition time
