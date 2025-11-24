@@ -79,8 +79,7 @@ header,nav{
 .ul{ 
     margin-left: auto;
     margin-right: auto;  
-    width: 60%;
-    /* column-count: 1; */
+    width: 60%; 
     list-style-type: disc;
     padding-left: 20px;
     padding-bottom: 20px;
@@ -97,7 +96,7 @@ header,nav{
 }
 
 li::marker { 
-    color: gray;   
+    color: #9E09C8;   
 } 
  
 
@@ -166,21 +165,13 @@ li::marker {
 
 
 .ul{  
-    width: auto; 
-    list-style-type: disc;
-    /* padding-left: 20px;
-    padding-bottom: 20px; */
-    font-family: "Domine", serif;
-    font-optical-sizing: auto;
-   font-weight:500;
-   font-style: normal;
-   font-size: 15px;
-   margin-left: 3%;
-   margin-right: 3%;
+    display: flex;
+        flex-direction: column !important; /* forces vertical */
+        align-items: flex-start;
    
 }
 
+
+
 }
-
-
 
