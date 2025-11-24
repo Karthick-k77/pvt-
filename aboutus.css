@@ -15,18 +15,16 @@ header,nav{
  
 
 .bgImage{
+     width: 60%; 
     display: block;
-    width: auto; 
+     /* max-width: 60%;   */
+      /* choose the max width you want */
     height: auto;
-    max-height: 60%;
-    border: 2px #2771fb;
-    border-radius: 2px;
-    margin-left: auto;
-    margin-right: auto; 
-    margin-top: 2%;
-    -webkit-user-drag: none;
-    object-fit: contain;
-      user-drag: none;
+    max-height: 60%;  
+    margin: 2% auto 0 auto;
+    -webkit-user-drag: none; 
+    user-drag: none;
+     object-position: inherit;
 }
 .bgImage::after {
       content: '';
@@ -198,4 +196,5 @@ header,nav{
 }
 
      }
+
 
