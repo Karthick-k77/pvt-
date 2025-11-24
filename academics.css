@@ -8,7 +8,7 @@ header,nav{
     padding: 2px;
  }
 
-.bgImage{
+/* .bgImage{
     display: block;
     width: 60%;
     height: 300;
@@ -19,6 +19,17 @@ header,nav{
     margin-top: 2%;
    -webkit-user-drag: none;
       user-drag: none;
+} */
+
+.bgImage {
+  width: 60%; 
+    display: block;
+     max-width: 60%;   /* choose the max width you want */
+    height: auto;
+    max-height: 60%;  
+    margin: 2% auto 0 auto;
+    -webkit-user-drag: none;
+    user-drag: none;
 }
 .bgImage::after {
       content: '';
@@ -200,6 +211,7 @@ li::marker {
 
      }
  
+
 
 
 
