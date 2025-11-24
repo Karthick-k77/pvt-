@@ -9,15 +9,15 @@ header,nav{
  }
 
 .bgImage{
-    display: block;
-    width: 60%;
-    height: 300;
-    border: 2px #2771fb;
-    border-radius: 2px;
-     margin-left: auto;
-    margin-right: auto;
+   display: block;
+    width: auto; 
+    height: auto;
+    max-height: 60%; 
+    margin-left: auto;
+    margin-right: auto; 
     margin-top: 2%;
-   -webkit-user-drag: none;
+    -webkit-user-drag: none;
+    object-fit: contain;
       user-drag: none;
 }
 .bgImage::after {
@@ -90,6 +90,7 @@ header,nav{
     margin-left: auto;
     margin-right: auto;  
     width: 60%;
+    height: auto;
     /* column-count: 1; */
     list-style-type: disc;
     padding-left: 20px;
@@ -111,14 +112,13 @@ li::marker {
 } 
  @media (max-width:786px){
     .bgImage{
-     display: block;
-    width: 100%;
-    height: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    margin: 0;
+     width: 100%; 
+    display: block;
+        height: auto;
+    max-height: 60%;  
+    margin: 2% auto 0 auto;
     -webkit-user-drag: none;
-      user-drag: none;
+    user-drag: none;
 }
 .bgImage::after {
       content: '';
@@ -179,6 +179,12 @@ li::marker {
   font-style: normal;
   font-size: 14px;
 }
+
+ ul {
+        display: flex;
+        flex-direction: column !important; /* forces vertical */
+        align-items: flex-start;           /* optional */
+    }
 
 
 
