@@ -44,16 +44,14 @@
     font-size: 14px;
      /* padding: 0; */
     margin-top: 2rem;
-    margin-bottom: 0;
-    color:#800;
+    margin-bottom: 0; 
     font-size: 17px;
     font-family: "Unna", serif;
     font-weight: 900;
     font-style: normal;
     font-variation-settings:
     "wdth" 100;
-     border: 1px solid black;
-     text-align: center;
+      text-align: center;
     
 }
  
@@ -77,11 +75,25 @@
    border: 1px solid black;
    text-align: center;
 }
-  
 
+.ad-space-div-header{ 
+    padding: 10px;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto; 
+     font-family: "Domine", serif;
+    font-optical-sizing: auto;
+  font-weight:500;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: bold;
+  color: #9E09C8;
+   border: 1px solid black;
+   text-align: center;
+}
 /* Updated UI*/
 .admission-body{
-    height: 85%;
+    height: 90%;
     
 }
 
@@ -153,14 +165,12 @@ header,nav{
     padding: 10px;
      margin-top: 2rem;
     margin-bottom: 0;
-    color:#800;
     font-size: 16px;
     font-family: "Unna", serif;
     font-weight: 900;
     font-style: normal;
     font-variation-settings:
-    "wdth" 100;
-    border: 1px solid black;
+    "wdth" 100; 
 }
 
 /* Updated UI*/
@@ -185,6 +195,24 @@ header,nav{
   font-weight:500;
   font-style: normal;
   font-size: 14px;
+   border: 1px solid black;
+   text-align: center;
+}
+
+
+
+.ad-space-div-header{ 
+    padding: 10px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto; 
+     font-family: "Domine", serif;
+    font-optical-sizing: auto;
+  font-weight:500;
+  font-style: normal;
+  font-size: 14px;
+  color: #9E09C8;
+  font-weight: bold;
    border: 1px solid black;
    text-align: center;
 }
