@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
     
     <link rel="stylesheet" href="index.css"> 
-    <meta name="theme-color" content="#DAF7A6">
+    <meta name="theme-color" content="#A0DEFF">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,6 +15,7 @@
  
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 
  <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap" rel="stylesheet">
@@ -56,8 +57,12 @@
           <h4 class="school-name-left">MAIN CAMPUS</h4>
          <h4 class="school-grade-left">MATRICULATION HIGHER SECONDARY SCHOOL</h4>
          <h5 class="school-address-left">CHINNIAMPALAYAM, MODAKURICHI (TK), ERODE-638104</h5>
-         <h5 class="school-address-left-mob">CHINNIAMPALAYAM, MODAKURICHI (TK)</h5>
+         <!-- <h5 class="school-address-left">Mail:prasanthimhss@gmail.com</h5> -->
+         <h5 class="school-address-left-mail"><i class="fa-solid fa-envelope"></i>prasanthimhss@gmail.com <i class="fa-solid fa-phone"></i>9444124464</h5>
+          <h5 class="school-address-left-mob">CHINNIAMPALAYAM, MODAKURICHI (TK)</h5>
         <h5 class="school-address-left-mob">ERODE-638104</h5>
+       <h5 class="school-address-left-mob-mail"><i class="fa-solid fa-envelope"></i>prasanthimhss@gmail.com</h5>
+       <h5 class="school-address-left-mob-mail"><i class="fa-solid fa-phone"></i>9444124464</h5>
 
          </div>
         
@@ -66,8 +71,11 @@
           <h4 class="school-name-right">CITY CAMPUS</h4>
           <h4 class="school-grade-right">NURSERY AND PRIMARY SCHOOL</h4>
           <h5 class="school-address-right">66, AVVAIYAR STREET, TEACHER'S COLONY, ERODE-638011</h5>
-          <h5 class="school-address-right-mob">66, AVVAIYAR STREET, TEACHER'S COLONY</h5>
+          <h5 class="school-address-right-mail"><i class="fa-solid fa-envelope"></i>pvbschools@gmail.com <i class="fa-solid fa-phone"></i>9444124464</h5>
+           <h5 class="school-address-right-mob">66, AVVAIYAR STREET, TEACHER'S COLONY</h5>
           <h5 class="school-address-right-mob-1">ERODE-638011</h5>
+          <h5 class="school-address-left-mob-mail"><i class="fa-solid fa-envelope"></i>pvbschools@gmail.com</h5>
+          <h5 class="school-address-left-mob-mail-1"><i class="fa-solid fa-phone"></i>9363014464</h5>
           
 
            <!-- <img  class="badge_1" src="./src/badge.png"  >  -->
@@ -98,12 +106,15 @@
            <li class="nav-item"><a href="#" onclick="loadPage('campus')">CAMPUS</a> </li>
            
            <li class="nav-item"> <a href="#" onclick="loadPage('academics')">ACADEMICS</a></li>
-           <li class="nav-item"> <a href="#" onclick="loadPage('events')">EVENTS</a></li>
+           
            <li class="nav-item"> <a href="#" onclick="loadPage('transport')">TRANSPORT</a></li>
            <li class="nav-item"> <a href="#" onclick="loadPage('gallery')">GALLERY</a></li>
            <li class="nav-item"> <a href="#" onclick="loadPage('admission')">ADMISSION</a></li>
            
            <li class="nav-item"> <a href="#" onclick="loadPage('contactus')">CONTACT US</a></li>
+           <li class="nav-item"> <a href="#" onclick="loadPage('events')">EVENTS</a></li>
+           <li class="nav-item"> <a href="#" onclick="loadPage('payment')">PAY FEES</a></li>
+
            <!-- <li class="nav-item"> <a href="#" onclick="loadPage('news')">NEWS</a></li> -->
          </ul>
         </nav>
@@ -131,7 +142,7 @@
  <!-- ..... -->
 <img class="badge_2" src="./src/badge.png"  >
 <footer class="footer1">
-   <div>
+   <!-- <div>
  <h3 class="ind_h4">PRASANTHI VIDYA BHAVAN</h3>
  <h4 class="ind_h5">MAIN CAMPUS</h5>
  <div>
@@ -142,9 +153,9 @@
   <div class="index-space-div">Mail: pvbschools@gmail.com</div>
   <div class="index-space-div">Phone: 0424-2274691</div>
   <div class="index-space-div">Mobile: 9444124464</div>
-  <!-- <div class="space-div">Whatsapp: 9876543210</div> -->
-  </div>
- </div>
+   </div>
+ </div> -->
+ <!-- Different Model starts-->
  <!-- <div id="imageModal" class="modal" onclick="closeModal()">
   <span class="close">&times;</span>
   <img class="modal-content" id="modalImage">
@@ -153,7 +164,8 @@
 
  <!-- Modal -->
   
- <div class="footer-div-2">
+ <!-- Different model Ends -->
+ <!-- <div class="footer-div-2">
     <h3 class="ind_h4">PRASANTHI VIDYA BHAVAN </h3>
     <h4 class="ind_h5">CITY CAMPUS</h5>
     <div>
@@ -165,7 +177,7 @@
     <div class="index-space-div">Phone: 0424-23057</div>
     <div class="index-space-div">Mobile: 9363014464</div>
 </div>
- </div>
+ </div> -->
   <p class="copy-rights"> &copy; 2025 ABCD. All rights reserved. </p>
 
   
@@ -385,7 +397,6 @@ let currentIndex = 0;
 
 </body>
 </html>
-
 
 
 
